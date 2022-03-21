@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/styles.css">
+    <title>Mylinks</title>
+
+</head>
+<body id="body">
+    <div class="wrapper">
+        <div id="form">
+            <h2>My Links</h2>
+            <!-- FORM -->
+            <form onsubmit="validation()" id="form" method="POST" enctype="multipart/form-data" autocomplete="off">
+                <label id="labelprofilepic">Upload Photo (click this)
+                    <input type="file" id="profilepic" onchange="imagePreview(event)">
+                </label>
+                <div class="inputField">
+                    <input id="arroba" type="text" placeholder="Your @">
+                </div>
+                    <textarea maxlength="140" placeholder="Bio" id="textareainput" cols="100" rows="100"></textarea>
+            <div id="namelinks">
+                <div class="inputField">
+                    <input id="nl1" type="text" placeholder="Label #1">
+                </div>
+                <div class="inputField">
+                    <input id="nl2" type="text" placeholder="Label #2">
+                </div>
+                <div class="inputField">
+                    <input id="nl3" type="text" placeholder="Label #3">
+                </div>
+            </div>
+
+                <div class="inputField">
+                    <input id="url1"type="text" placeholder="Link #1">
+                </div>
+                <div class="inputField">
+                    <input id="url2" type="text" placeholder="Link #2">
+                </div>
+                <div class="inputField">
+                    <input id="url3" type="text" placeholder="Link #3">
+                </div>
+
+            <div id="extras">
+                <div class="colorform">
+                    <label>Page Color:</label>
+                    <input id="colorinput" type="color">
+                </div>
+            </div>
+
+                <div class="btn" onclick="validation()">
+                    <input value="Set Up" type="button">
+                </div>
+            </form>
+        </div>
+        <h4 id="logout" onclick="window.location.href = '../dist/index.html'">Logout</h4>
+
+<!-- LINKTREE -->
+        <div class="linktree">
+            <img id="imagen" src="">
+            
+            <h2 id="achedos"></h2>
+            <p id="textareaplace"></p>
+            <a id="urldemoniaca1" href="" class="links"></a>
+            <a id="urldemoniaca2" href="" class="links"></a>
+            <a id="urldemoniaca3" href="" class="links"></a>
+        </div>
+        <div id="divcontenido2"></div>
+</div>
+<script src="../src/links.js"></script>
+<script src="../dist/bundle.js"></script>
+<script src="../src/index.js" type="module"></script>
+</body>
+</html>
